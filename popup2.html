@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup2.css">
+    <title>Sign in & Sign up</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-container sign-up">
+            <form action="#">
+                <h2>sign up</h2>
+                <div class="form-group">
+                    <input type="text" required>
+                    <label for="">username</label>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" required>
+                    <label for="">email</label>
+                    <i class="fas fa-at"></i>
+                </div>
+                <div class="form-group glass">
+                    <input type="text" required>
+                    
+                    <label for="">State</label>
+                    <select id="state" required>
+                        <option value="" disabled selected></option>
+                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                        <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                        <option value="assam">Assam</option>
+                        <!-- Add options for the remaining 26 states here -->
+                        <option value="jammu_and_kashmir">Jammu and Kashmir</option>
+                        <option value="bihar">Bihar</option>
+<option value="chhattisgarh">Chhattisgarh</option>
+<option value="goa">Goa</option>
+<option value="gujarat">Gujarat</option>
+<option value="haryana">Haryana</option>
+<option value="himachal_pradesh">Himachal Pradesh</option>
+<option value="jharkhand"selected>Jharkhand</option>
+<option value="karnataka">Karnataka</option>
+<option value="kerala">Kerala</option>
+<option value="madhya_pradesh">Madhya Pradesh</option>
+<option value="maharashtra">Maharashtra</option>
+<option value="manipur">Manipur</option>
+<option value="meghalaya">Meghalaya</option>
+<option value="mizoram">Mizoram</option>
+<option value="nagaland">Nagaland</option>
+<option value="odisha">Odisha</option>
+<option value="punjab">Punjab</option>
+<option value="rajasthan">Rajasthan</option>
+<option value="sikkim">Sikkim</option>
+<option value="tamil_nadu">Tamil Nadu</option>
+<option value="telangana">Telangana</option>
+<option value="tripura">Tripura</option>
+<option value="uttar_pradesh">Uttar Pradesh</option>
+<option value="uttarakhand">Uttarakhand</option>
+<option value="west_bengal">West Bengal</option>
+
+                    </select>
+                    <i class="fas fa-user"></i>
+                    
+                </div>
+                <div class="form-group glass">
+                    <input type="text" required>
+                    <label for="state">Language</label>
+                    <select id="state" required>
+                        <option value="" disabled selected></option>
+                        <option value="hindi">हिन्दी</option>
+                        <option value="english"selected>English</option>
+                        <option value="Telugu">తెలుగు</option>
+                        <option value="Tamil">தமிழ்</option>
+                        <option value="Assamese">অসমীয়া</option>
+                    </select>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <label for="">password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <label for="">confirm password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <!--<a href="index.html"><button type="submit" class="btn">sign up</button></a>-->
+                <a href="index.html"><button type="button">sign-up</button></a>
+                <div class="link">
+                    <p>You already have an account?<a href="#" class="signin-link"> sign in</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="form-container sign-in">
+            <form action="#">
+                <h2>login</h2>
+                <div class="form-group">
+                    <input type="text" required>
+                    <i class="fas fa-user"></i>
+                    <label for="">username</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <i class="fas fa-lock"></i>
+                    <label for="">password</label>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">forgot password?</a>
+                </div>
+                
+                <a href="index.html"><button type="button">Login</button></a>
+                <!--<a href="index.html"><button type="submit" class="btn">Login</button></a>-->
+                <div class="link">
+                    <p>Don't have an account?<a href="#" class="signup-link"> sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <script src="popup2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+/* Reset some default styles for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply a background color to the body */
+  body {
+    background-color: #fbecdbab;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  /* Style the header with a background color and center the text */
+  .h-primary {
+    font-size: 50px;
+    text-align: center;
+    /* background-color:  rgb(250, 177, 125);
+    border-radius: 20px;; */
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 3px 3px rgb(214, 130, 20);
+    padding: 20px;
+  }
+  
+  /* Style the navigation bar */
+  #navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the quiz section */
+  #quiz {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the question containers */
+  #question-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the question text */
+  #question-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the answer options */
+  #options label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the submit button */
+  #Submit {
+    display: block;
+    margin: 0 auto;
+    /* background-color: #3498db; */
+    /* color: #fff; */
+    /* border: none; */
+    /* border: 3px solid white;
+    background-color: burlywood;
+    color: black; */
+    padding: 10px 20px;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    /* padding: 6px 20px; */
+    background-color: rgb(227 96 2 / 89%);
+    color: white;
+    border: 3px solid rgb(255, 106, 0);
+    /* margin: 47px; */
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  #Submit:hover{
+    border: 3px solid rgba(225, 18, 18, 0.853);
+    background-color: burlywood;
+    color: black;
+}
+ 
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }

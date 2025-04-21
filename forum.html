@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="forum.css">
+
+    <title>Chat Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .chat-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .message {
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .user-message {
+            background-color: #394c60d1;
+            color: white;
+            text-align: right;
+        }
+
+        .chatbot-message {
+            background-color: #f2f2f2;
+        }
+
+        .button {
+            background-color: #394c60d1;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .message-input {
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="chat-container">
+        <h1>Welcome to the Chat Forum</h1>
+        
+        <div class="message user-message">
+            Hello! This is a user message.
+        </div>
+        
+        <div class="message chatbot-message">
+            Sure, I'd like to chat. This is a chatbot message.
+        </div>
+
+        <div class="message user-message">
+            Great! Let's continue. This is another user message.
+        </div>
+        
+        <div class="message chatbot-message">
+            Of course, we can keep chatting. This is another chatbot message.
+        </div>
+        
+        <h2>Start a New Chat</h2>
+        <form id="message-form">
+            <textarea class="message-input" id="message-content-input" placeholder="Type your message..." required></textarea><br>
+            <button class="button" type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script>
+        // Handle form submission
+        document.getElementById('message-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const content = document.getElementById('message-content-input').value;
+            
+            // Determine whether the message is a user message or chatbot message based on the current class
+            const isUserMessage = document.querySelector('.message.user-message:last-child');
+
+            const message = document.createElement('div');
+            message.className = isUserMessage ? 'message chatbot-message' : 'message user-message';
+            message.innerText = content;
+
+            document.querySelector('.chat-container').appendChild(message);
+
+            // Clear form input
+            document.getElementById('message-content-input').value = '';
+        });
+    </script>
+</body>
+</html>
